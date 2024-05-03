@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title-screen {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.moving-icons {
+    position: relative;
+}
+
+.icon {
+    height: 100px;
+    width: 87px;
+    position: absolute;
+    animation: moveIcon 2s infinite alternate;
+}
+
+@keyframes moveIcon {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 100px;
+        left: 100px;
+    }
+}
+
+#hidden {
+    display: none;
+    padding: 10px;
+}
