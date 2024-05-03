@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Screen</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="title-screen">
+        <h1>Welcome to CSCI2020U Final Project</h1>
+        <h2>Please enter your username and create or join a room</h2>
+        <input type="text" id="usernameInput" placeholder="Username..."/>
+        <button onclick=computer()>Play Against Computer</button>
+        <button onclick=startNoCode()>Create Room</button>
+        <button id="show" onclick="displayText()">Join Room</button>
+
+        <div id="hidden">
+            <input type="text" id="roomInput" placeholder="Room..."/>
+            <button id="room_select" onclick=startWithCode()>Start</button>
+        </div>
+
+
+        <div class="moving-icons">
+            <img src="images/ontech_logo.png" class="icon"></img>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

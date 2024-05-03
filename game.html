@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html id ="html" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="css/game.css">
+        <script src="js/game.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="game-container">
+                <table id = "board" class="board">
+                    <tr>
+                        <td class="cell" id="cell-0"></td>
+                        <td class="cell" id="cell-1"></td>
+                        <td class="cell" id="cell-2"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="cell-3"></td>
+                        <td class="cell" id="cell-4"></td>
+                        <td class="cell" id="cell-5"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="cell-6"></td>
+                        <td class="cell" id="cell-7"></td>
+                        <td class="cell" id="cell-8"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="chat-container">
+                <p id="current"><b>Current room: </b></p>
+                <table border="0" id="roomCode">
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <div class="chat">
+                    <div class="messages" id="messages"></div>
+                        <textarea title="Chat Log" id="log" readonly></textarea>
+                    <p>Available Rooms:</p>
+                        <textarea title="Chat Log" style="width: 300px; height: 300px;" id="chatRoom" readonly></textarea>
+                        <input type="text" id="messageInput" placeholder="Type your message..."/>
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
